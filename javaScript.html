@@ -4,8 +4,8 @@
 <head>
     <title> Learning HTML </title>
     <script>
-        function myFunction() {
-        document.getElementById("demo").innerHTML = "BOO!";
+        function demo1Fun() {
+        document.getElementById("demo1").innerHTML = "BOO!";
         }
     </script>
 </head>
@@ -19,14 +19,31 @@
         <br> getElementById("id") - "finds" an HTML element by id and do some operations on it.
     </p>
 
+    <h2>Script tag</h2>
+    <p>In HTML, JavaScript functions are inserted between two script tags.
+    <br>It can be written in the head or body section, or be written externally.
+    </p>
 
-    <h2>Demo JavaScript in Head</h2>
-
-    <p id="demo">A very not suspicious normal looking paragraph.</p>
-    <button type="button" onclick="myFunction()">Scare me!</button>
-
+    <h3>Demo1 JavaScript in Head</h3>
+    <p id="demo1">A very not suspicious normal looking paragraph.</p>
+    <button type="button" onclick="demo1Fun()">Scare me!</button>
     
+    <h3>Demo2: JavaScript in the Body</h3>
+    <p id ="demo2">Another not-very-sus paragraph.</p>
+    <button type="button" onclick="demo2Fun()">Again!</button>
+    <script>
+        function demo2Fun(){
+            document.getElementById("demo2").innerHTML = "BOO HAHAHAH!!!";
+        }
+    </script>
 
+    <h3>Demo3: External JavaScript</h3>
+    <!-- idk why this is not working :///  -->
+    <p id = "demo3">Surely it cannot happen a 3rd time!</p>
+    <button type="button" onclick="demo3Fun()">Unless..?</button>
+    <script src = "\learn.js"></script>
+    <hr> 
+    
 
 
 </body>
