@@ -41,8 +41,76 @@
     <!-- idk why this is not working :///  -->
     <p id = "demo3">Surely it cannot happen a 3rd time!</p>
     <button type="button" onclick="demo3Fun()">Unless..?</button>
-    <script src = "\learn.js"></script>
+    <script src = "/learn.js"></script>
     <hr> 
+
+    <h2>JS Outputs</h2>
+    <pre>
+        JS can display data in different ways
+            - Writing into an HTML element, using innerHTML.
+            - Writing into the HTML output using document.write().
+            - Writing into an alert box, using window.alert().
+            - Writing into the browser console, using console.log().
+    </pre>
+
+    <h3>innerHTML</h3>
+    <p>
+        innerHTML = html content
+        To access an html element: 1. Give the element an id
+        <br>2. fetch the element by id using document.getElementById(id) method.
+        <br>E.g. you can calculate 12 * 5, which =
+    </p><p id="mathedResults">You shouldn't see this.</p>
+    <script>
+        document.getElementById("mathedResults").innerHTML = 12*5;
+    </script>
+
+    <h3>document.write()</h3>
+    <p>
+        Useful for testing, but will delete all existing HTML if run after document loaded.
+    </p>
+    <button type = "button" onclick="document.write(12*5)">The button of DOOM! (and answer of 12*5)</button>
+    <script>
+        document.write("Some debug msg here about how you shouldn't use write() after document is loaded");
+    </script>
+
+    <h3>window.alert()</h3>
+    <p>
+        Gives an alert box you can put things in. E.G. the answer of 446%17
+    </p>
+    <script>
+        window.alert(
+            "Hello human person reading this, I am this page!"
+            + " The answer to 446%17 is " + 446%17 + "! You're welcome :)");
+        alert("This page knows your location. That's right, I'm coming for you.");
+        alert("Click 'OK' if you're gay. I dare you, you wouldn't.");
+        alert("Haha you gei");
+    </script>
+
+    <h3>console.log()</h3>
+    <p>
+        Useful for debugging, display data on browser.
+    </p>
+    <script>
+        console.log("What is 23 + 42? Yep, it's " + 2000+342);
+    </script>
+    <!-- F12 -> "Console" in debugger menu -> Run -->
+
+    <h3>window.print()</h3>
+    <p>
+        like, literally print the page, not display words screen.
+    </p>
+    <button onclick="window.print()">Print page</button>
+
+
+
+    <hr>
+    <h2></h2>
+
+
+
+
+
+
     
 
 
